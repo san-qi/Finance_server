@@ -1,0 +1,23 @@
+[package]
+name = "finance"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tide = "0.16.0"
+async-std = { version = "1.8.0", features = ["attributes"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.79"
+tide-sqlx = "0.6.1"
+sqlx = { version = "0.5.11", features = [
+    "mysql",
+    "runtime-async-std-native-tls",
+    "json",
+    "macros",
+] }
+chrono = "0.4.19"
+rust-crypto = "^0.2"
+regex = "1.5.4"
+lazy_static = "1.4.0"
