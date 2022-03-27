@@ -43,7 +43,7 @@
   - localhost:8084/login -d '{"uid":?, "password":"?"}'
   - localhost:8084/password -d '{"password":"?"}' --cookie "uid=?;info=?"
   - localhost:8084/upload -d '[{"id":?, "amount":?, "date":"?", "type":"?", "isIncome":?}]' --cookie "uid=?;info=?"
-  - localhost:8084/delete?rid=0 -X -d '?' --cookie "uid=?;info=?"
+  - localhost:8084/delete?rid=0 -d '[]' --cookie "uid=?;info=?"
   - localhost:8084/download?rid=0 --cookie "uid=?;info=?"
 
 - 返回:
